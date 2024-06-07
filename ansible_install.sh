@@ -4,7 +4,6 @@ sudo apt-get install -y python3-pip
 sudo apt-get install -y ansible
 
 echo "[all]" > hosts
-echo "localhost ansible_connection=local" >> hosts
 
 echo "[servers]" >> hosts
 echo "$srvname=$srvip $ansible_user $ssh_path"  >> hosts
